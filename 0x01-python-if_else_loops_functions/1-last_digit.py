@@ -2,7 +2,9 @@
 import random
 number = random.randint(-10000, 10000)
 # YOUR CODE HERE
-remainder = str(number)[-1]
+remainder = int(str(number)[-1])
+
+msg = "sth"
 
 if remainder:
 
@@ -14,4 +16,4 @@ if remainder:
 else:
     msg = "is 0"
 
-print("Last digit of {} is {} and is {}".format(number, remainder, msg)
+print("Last digit of {} is {} and is {}".format(number, remainder, msg))
