@@ -4,6 +4,9 @@ number = random.randint(-10000, 10000)
 # YOUR CODE HERE
 remainder = int(str(number)[-1])
 
+if number < 0:
+    remainder = remainder * -1
+
 msg = "sth"
 
 if remainder:
