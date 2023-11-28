@@ -19,4 +19,4 @@ if remainder:
 else:
     msg = "is 0"
 
-print("Last digit of {} is {} and is {}".format(number, remainder, msg))
+print("Last digit of {} is {} and {} is {}".format(number, remainder, remainder, msg))
