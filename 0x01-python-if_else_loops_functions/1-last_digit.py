@@ -1,22 +1,13 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-# YOUR CODE HERE
-remainder = int(str(number)[-1])
-
+mod = abs(number) % 10
 if number < 0:
-    remainder = remainder * -1
-
-msg = "sth"
-
-if remainder:
-
-    if remainder > 5:
-        msg = "greater than 5"
-    elif remainder < 6:
-        msg = "less than 6 and not 0"
-
+    mod = -mod
+print("Last digit of {} is {} and is ".format(number, mod), end="")
+if mod > 5:
+    print("greater than 5")
+elif mod == 0:
+    print("0")
 else:
-    msg = "is 0"
-
-print("Last digit of {} is {} and {} is {}".format(number, remainder, remainder, msg))
+    print("less than 6 and not 0")
